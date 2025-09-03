@@ -1,4 +1,5 @@
 // src/pages/HomePage.jsx
+import { Link } from "react-router-dom";
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4">
@@ -15,18 +16,16 @@ export default function HomePage() {
 
         {/* Buttons */}
         <div className="flex gap-4 justify-center">
-          <a
-            href="/projects"
+          < Link to="/profile"
             className="px-6 py-2 rounded-lg bg-green-600 text-white font-semibold shadow hover:bg-green-700 transition"
           >
             Projects
-          </a>
-          <a
-            href="/skills"
+          </Link>
+          <Link to="/skills"
             className="px-6 py-2 rounded-lg bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition"
           >
             My Skills
-          </a>
+          </Link>
         </div>
       </div>
 

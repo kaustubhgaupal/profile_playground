@@ -7,6 +7,7 @@ export default function HealthCheck({ apiBase = import.meta.env.VITE_API_BASE_UR
   const [error, setError] = useState(null);
 
   const check = async () => {
+    console.log(apiBase);
     setLoading(true);
     setError(null);
     try {

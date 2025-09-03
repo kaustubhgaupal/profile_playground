@@ -12,6 +12,7 @@ export default function ProfilePage() {
   useEffect(() => {
     fetchAPI("/profile")
       .then(data => {
+        console.log(data);
         setProfile(data);
         if (data) {
           setForm({
